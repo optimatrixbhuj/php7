@@ -1,0 +1,38 @@
+[25-Nov-2021 18:16:45 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method utility::check_record_used_delete() in F:\wwwseven\php7\admin\controllers\controller_admin_user_list.php:431
+Stack trace:
+#0 F:\wwwseven\php7\core\app.php(1419): _admin_user_list->single_delete()
+#1 F:\wwwseven\php7\core\app.php(1153): app->execute_controller()
+#2 F:\wwwseven\php7\admin\index.php(13): app->execute()
+#3 {main}
+  thrown in F:\wwwseven\php7\admin\controllers\controller_admin_user_list.php on line 431
+[25-Nov-2021 18:18:43 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method app::get_check_exist() in F:\wwwseven\php7\core\utility.php:3195
+Stack trace:
+#0 F:\wwwseven\php7\admin\controllers\controller_admin_user_list.php(431): utility->check_record_used_delete('admin_user', '11', 'admin_user')
+#1 F:\wwwseven\php7\core\app.php(1419): _admin_user_list->single_delete()
+#2 F:\wwwseven\php7\core\app.php(1153): app->execute_controller()
+#3 F:\wwwseven\php7\admin\index.php(13): app->execute()
+#4 {main}
+  thrown in F:\wwwseven\php7\core\utility.php on line 3195
+[26-Nov-2021 19:13:21 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in F:\wwwseven\php7\core\utility.php:1132
+Stack trace:
+#0 F:\wwwseven\php7\admin\controllers\controller_change_profile.php(87): utility->store_uploaded_file('uploads/admin_u...', '1637934201.png', '140', '80', '')
+#1 F:\wwwseven\php7\core\app.php(1433): _change_profile->change_profile()
+#2 F:\wwwseven\php7\core\app.php(1167): app->execute_controller()
+#3 F:\wwwseven\php7\admin\index.php(13): app->execute()
+#4 {main}
+  thrown in F:\wwwseven\php7\core\utility.php on line 1132
+[26-Nov-2021 19:16:46 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function mime_content_type() in F:\wwwseven\php7\core\utility.php:1132
+Stack trace:
+#0 F:\wwwseven\php7\admin\controllers\controller_change_profile.php(87): utility->store_uploaded_file('uploads/admin_u...', '1637934405.png', '140', '80', '')
+#1 F:\wwwseven\php7\core\app.php(1433): _change_profile->change_profile()
+#2 F:\wwwseven\php7\core\app.php(1167): app->execute_controller()
+#3 F:\wwwseven\php7\admin\index.php(13): app->execute()
+#4 {main}
+  thrown in F:\wwwseven\php7\core\utility.php on line 1132
+[06-Jun-2022 17:57:43 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method _admin_user_list::getPostVars() in F:\wwwseven\php7\admin\controllers\controller_admin_user_list.php:163
+Stack trace:
+#0 F:\wwwseven\php7\core\app.php(1433): _admin_user_list->multi_delete()
+#1 F:\wwwseven\php7\core\app.php(1167): app->execute_controller()
+#2 F:\wwwseven\php7\admin\index.php(13): app->execute()
+#3 {main}
+  thrown in F:\wwwseven\php7\admin\controllers\controller_admin_user_list.php on line 163

@@ -1,0 +1,289 @@
+<!-- BEGIN: main -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+<div class="wrapper">
+  <!-- Main Header -->
+	<!-- Header Navbar -->
+    <nav class="main-header navbar navbar-expand  navbar-light navbar-white" role="navigation">
+		<!-- Sidebar toggle button-->
+		<ul class="navbar-nav"><li class="nav-item"><a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a></li></ul>
+		<!-- Navbar Right Menu -->
+		<ul class="navbar-nav ml-auto">
+			<!-- User Account Menu -->
+			<li class="user user-menu  nav-item dropdown">
+            <!-- Menu Toggle Button -->
+            <a href="#" class="dropdown-toggle btn-admin nav-link" style="border-left:0px !important;" data-toggle="dropdown"  id="navbarDropdown">
+              <!-- The user image in the navbar-->
+              <img src="images/user2-160x160.jpg" class="user-image" alt="User Image">
+              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+              <span class="d-xs-none hide-360">ADMIN</span>
+            </a>
+			<ul class="dropdown-menu" >
+              <!-- The user image in the menu -->
+              <li class="user-header bg-primary">
+                <img src="images/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <p>
+                 Welcome ADMIN                 <small>Last Login : 2 days ago</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col text-center">
+					<a href="index.php?view=change_profile" class="btn btn-default btn-sm">Profile</a>
+					<a href="index.php?view=change_password" class="btn btn-default btn-sm"> Password</a>
+					<a href="index.php?act=do_logout" class="btn btn-default btn-sm" >Logout</a>
+				  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+            </ul>
+		</li>
+		<li class="user user-menu col-xs-12"><a href="javascript:search_sp_vehicle()" class="btn btn-o btn-sm btn-primary mt-1">F9 [ Search ]</a></li>
+            <li class="user user-menu col-xs-12"><a href="index.php?act=do_logout" class="btn btn-o btn-sm btn-danger ml-1 mt-1">Logout</a></li>
+		</ul>
+	</nav>
+<!---------------------------------------------------------------------------------------------------------------------->
+	<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar sidebar-dark-primary">
+	<a href="http://192.168.1.25:8074/php7/admin/" class="brand-link"><img src="images/logo_icon.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"><span class="brand-text font-weight-light">OptiMatrix</span></a> 
+	<!-- sidebar: style can be found in sidebar.less -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->        
+        
+<nav class="mt-2">
+<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+ 
+    <!-- sub menu avalable  -->
+    <li class="nav-item "><!-- . menu-open-->
+      <a class="nav-link " href="#">
+		<i class="nav-icon fa fa-tachometer-alt"></i><p>Dashboard
+	  
+	        <i class="right fas fa-angle-left"></i>
+ </p> </a>
+      <ul class="nav nav-treeview">
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=home" ><i class="far fa-circle nav-icon"></i><p>Dashboard</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=dashboard1" ><i class="far fa-circle nav-icon"></i><p>Dashboard 1</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=dashboard2" ><i class="far fa-circle nav-icon"></i><p>Dashboard 2</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=dashboard3" ><i class="far fa-circle nav-icon"></i><p>Dashboard 3</p></a> </li>
+        
+      </ul>
+    </li>
+  
+
+    <!-- sub menu avalable  -->
+    <li class="nav-item "><!-- . menu-open-->
+      <a class="nav-link " href="#">
+		<i class="nav-icon fas fa-edit"></i><p>Forms
+	  
+	        <i class="right fas fa-angle-left"></i>
+ </p> </a>
+      <ul class="nav nav-treeview">
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=forms_general_elements" ><i class="far fa-circle nav-icon"></i><p>General Elements</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=forms_advanced_elements" ><i class="far fa-circle nav-icon"></i><p>Advanced Elements</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=forms_editors" ><i class="far fa-circle nav-icon"></i><p>Editors</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=forms_validations" ><i class="far fa-circle nav-icon"></i><p>Validations</p></a> </li>
+        
+      </ul>
+    </li>
+  
+
+    <!-- sub menu avalable  -->
+    <li class="nav-item "><!-- . menu-open-->
+      <a class="nav-link " href="#">
+		<i class="nav-icon fa fa-bars"></i><p>Menu Setting
+	  
+	        <i class="right fas fa-angle-left"></i>
+ </p> </a>
+      <ul class="nav nav-treeview">
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=menu_master_list" ><i class="far fa-circle nav-icon"></i><p>Menu List</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=menu_file_label" ><i class="far fa-circle nav-icon"></i><p>Menu File Label</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=menu_access_control" ><i class="far fa-circle nav-icon"></i><p>Menu Access</p></a> </li>
+        
+      </ul>
+    </li>
+  
+
+    <!-- sub menu avalable  -->
+    <li class="nav-item menu-open"><!-- . menu-open-->
+      <a class="nav-link active" href="#">
+		<i class="nav-icon fa fa-users"></i><p>Administrator
+	  
+	        <i class="right fas fa-angle-left"></i>
+ </p> </a>
+      <ul class="nav nav-treeview">
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=admin_user_group_list" ><i class="far fa-circle nav-icon"></i><p>User Group List</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link active" href="index.php?view=admin_user_list" ><i class="far fa-circle nav-icon"></i><p>User List</p></a> </li>
+        
+          <li class="nav-item">
+		  <a class="nav-link " href="index.php?view=user_logs_list" ><i class="far fa-circle nav-icon"></i><p>User Logs</p></a> </li>
+        
+      </ul>
+    </li>
+  
+
+</ul>
+</nav>        
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper"><div class="content pt-3">
+  <div class="container-fluid">
+  <div class="card card-primary card-outline">
+<div class="card-header">
+      <div class="row mb-2">
+        <div class="col-md-6">
+                <h1>Admin user Manager</h1>
+              </div>
+              <div class="col-md-6">
+                <div class="actionBtns text-right">
+                          <div class="btn btn-o btn-sm btn-primary" onclick="window.location.href='index.php?view=admin_user_addedit'"><i class="fa fa-plus-circle mr-1" title="Add"></i> <span>Add</span></div>
+              <div class="btn btn-o btn-sm btn-primary" onclick="mulitple_delete('frm_admin_user');"><i class="fa fa-trash mr-1" title="Delete"></i><span>Delete</span></div>
+             <div class="btn btn-o btn-sm btn-primary" onclick="window.location.href='index.php?view=admin_user_list&recycle=true'"><i class="fa fa-recycle mr-1" title="Recycle Bin"></i> <span>Recycle Bin</span></div>
+                       <div class="btn btn-o btn-sm btn-primary" onclick="javascript:location.reload(true)"><i class="fa fa-sync mr-1" title="Refresh"></i> <span>Refresh</span></div>
+              </div>
+      </div>
+    </div>
+</div>
+  <div class="card-header">
+      <h3 class="card-title">
+          <div class="form-inline mobile-block">
+           <form name="frm_search" id="frm_search" method="post" enctype="multipart/form-data" action="">
+<input type="hidden" name="OPTI MATRIX SOLUTIONS_REF_VIEW" value="admin_user_list">
+        <input name="act" id="act" type="hidden" value="search" />        <input name="view" id="view" type="hidden" value="admin_user_list" />        <input name="__search__" id="__search__" type="hidden" />               <div class="small mr-1 d-inline">Search By</div>
+             <input name="group_name" id="group_name" type="text" class="form-control form-control-sm mb-1 mr-sm-2 auto" style="" placeholder="User Group Name" onfocus="get_suggession('admin_user_group','group_name',this.value);" />                     <input name="full_name" id="full_name" type="text" class="form-control form-control-sm mb-1 mr-sm-2 auto" style="" placeholder="Full Name" onfocus="get_suggession('admin_user','full_name',this.value);" />           <input name="username" id="username" type="text" class="form-control form-control-sm mb-1 mr-sm-2" style="" placeholder="Username" />          <input name="email" id="email" type="text" class="form-control form-control-sm mb-1 mr-sm-2" style="" placeholder="Email ID" />           <input name="mobile" id="mobile" type="text" class="form-control form-control-sm mb-1 mr-sm-2" style="" placeholder="Mobile Number" />                      <select name="branch_id" id="branch_id" class="form-control form-control-sm mb-1 mr-sm-2" style="" >
+<option  value="ALL">All Branch</option>
+<option  value="9">Opti Solutions</option>
+<option  value="11">Ratna World 1</option></select>           		   <input name="btn_search" id="btn_search" type="button" class="btn btn-primary mb-1 btn-sm" onclick="search_records()" value="Search" />           <input name="btn_reset" id="btn_reset" type="button" class="btn btn-secondary mb-1 btn-sm" value="Reset" onclick="window.location.href='index.php?view=admin_user_list&destroy=1'" />                </form>          </div>
+      </h3>
+      <div class="card-tools">
+      <div class="paging">{PAGING}</div>
+      </div>
+    </div>
+  <div class="card-body table-responsive">
+        <!-- start of main body -->
+    <table border="0" width="100%" cellpadding="0" cellspacing="2" align="center" class="content_table">
+      <tr>
+        <td>
+   <form name="frm_admin_user" id="frm_admin_user" method="post" enctype="multipart/form-data" action="">
+<input type="hidden" name="OPTI MATRIX SOLUTIONS_REF_VIEW" value="admin_user_list">
+   <input name="act" id="act" type="hidden" />   <!-- BEGIN: admin_user_table -->
+   <table width="100%" align="center" border="0" cellspacing="1" cellpadding="1" class="table-hover table-bordered admintable table-sm">
+   <thead>
+    <tr>
+      <th class="text-center" width="5%" align="center" valign="middle">&nbsp;Sr No.&nbsp;</th>
+      <th class="text-center" width="2%" height="25" align="center" valign="middle"><input name="checkbox" id="checkbox" type="checkbox" class="checkAll" /></th>
+      <th class="text-center" width="10%" height="25" align="center" valign="middle"><a href="index.php?view=admin_user_list&order_by_field_name=admin_user_group.group_name&order_by=ASC">User Group Name</a></th>
+            <th class="text-center" width="10%" height="25" align="center" valign="middle"><a href="index.php?view=admin_user_list&order_by_field_name=branch.name&order_by=ASC">Branch</a></th>
+          <th class="text-center" width="10%" height="25" align="center" valign="middle"><a href="index.php?view=admin_user_list&order_by_field_name=full_name&order_by=ASC">Full Name</a></th>
+      <th class="text-center" width="10%" height="25" align="center" valign="middle"><a href="index.php?view=admin_user_list&order_by_field_name=username&order_by=ASC">Username</a></th>
+      <th class="text-center" width="10%" height="25" align="center" valign="middle">&nbsp;Email&nbsp;</th>
+      <th class="text-center" width="10%" height="25" align="center" valign="middle">&nbsp;Mobile Number&nbsp;</th>
+      <th class="text-center" width="10%" height="25" align="center" valign="middle">&nbsp;Photo&nbsp;</th>
+      <th class="text-center" width="15%" height="25" align="center" valign="middle">Option</th>
+    </tr>
+	</thead>
+    <!-- BEGIN: admin_user_row -->
+    <tr height="25" class="{ROW_CLASS} table_field_value">
+      <td align="center" valign="middle">{SERIAL}</td>
+      <td align="center" valign="middle"><input name="del[]" id="del{COUNT}" type="checkbox" class="delAll" value="{admin_user.id}" style="display:{option_show_hide}" /></td>
+      <td align="center" valign="middle">{admin_user.admin_user_group_group_name}</td>
+            <td align="center" valign="middle">{admin_user.branch_name}</td>
+            <td align="center" valign="middle">{admin_user.full_name}</td>
+      <td align="center" valign="middle">{admin_user.username}</td>
+      <td align="center" valign="middle">{admin_user.email}</td>
+      <td align="center" valign="middle">{admin_user.mobile}</td>
+      <td align="center" valign="middle">{photo}</td>
+      <td align="center" valign="middle">&nbsp;
+               <a class="btn btn-default btn-sm" onclick="window.location.href='index.php?view=admin_user_addedit&id={admin_user.id}&page_no={PAGE_NO}'"><i class="fa fa-pencil-alt" title="Edit Record"></i></a>&nbsp;
+        <a class="btn btn-default btn-sm" style="display: {SHOW_HIDE_DELETE}" onclick="javascript:confirm_del({'id':'{admin_user.id}', 'act':'single_delete','page_no':'{PAGE_NO}'})"><i class="fa fa-trash-alt" style="cursor:pointer;" title="Delete Record"></i></a>
+          </td>
+  </tr>
+    <!-- END: admin_user_row -->
+  <tr class="even table_field_value" style="display:{SHOW_HIDE}">
+    <td height="25" align="center" valign="middle" colspan="10">Records not found...</td>
+  </tr>
+  <tr height="30" class="records_table_header" >
+    <td align="left" colspan="10" class="records_table_header" style="padding-left:5px">Records per page :
+      <select name="record_per_page" id="record_per_page" type="text" class="textbox" style="width:70px; padding:2px;" onchange="document.frm_admin_user.submit();" >
+<option  value="5">5</option>
+<option  selected value="10">10</option>
+<option  value="15">15</option>
+<option  value="20">20</option>
+<option  value="25">25</option>
+<option  value="30">30</option>
+<option  value="35">35</option>
+<option  value="40">40</option>
+<option  value="45">45</option>
+<option  value="50">50</option></select>      <div style="float:right; margin-right:5px;" class="paging">{PAGING}</div></td>
+    </tr>
+  </table>
+  <!-- END: admin_user_table -->
+  </form></td>
+</tr>
+</table>
+<!-- end of main body -->
+</div>
+<div id="push" ></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Main Footer -->
+<footer class="main-footer">
+  <!-- To the right -->
+  <div class="float-right hidden-xs">
+    Design & Developed By:  OPTI MATRIX SOLUTIONS 1.0.0
+  </div>
+  <!-- Default to the left -->
+  <strong>Copyright &copy;  2022 <a target="_blank" href="http://www.optimatrix.in/">OPTIMATRIX SOLUTIONS</a>.</strong> All rights reserved.
+</footer>
+
+
+</div>
+<!-- ./wrapper -->
+
+
+<script>
+  function storageChange (event) {
+    //console.log(event);
+    if(event.key === 'logged_in') {
+      //alert('You are Logged out from this Account.' + event.newValue);
+      //alert('You are Logged out from this Account.');
+      location.href = "index.php?view=default";
+      //window.close();
+    }
+  }
+  window.addEventListener('storage', storageChange, false)
+</script>
+<!-- END: main -->

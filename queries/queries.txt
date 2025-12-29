@@ -1,0 +1,7 @@
+07:02 PM 06-06-2022 [meera]
+ALTER TABLE `student` ADD `gender` ENUM('Male','Female') NOT NULL AFTER `mobile`;
+
+
+Binny 07-01-2022-16:44
+
+ALTER TABLE `admin_user` ADD `sign` VARCHAR(255) NOT NULL AFTER `pwd_change_date`;
