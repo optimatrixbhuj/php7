@@ -517,8 +517,5 @@ define("SMS_SENDER_ID","AYOAYO");
 
 define("SMS_URL","http://msg.optimatrix.in/");
 
-/*=========================== */
-
-
-// this is sample commit 2
+/*=========================== */// dhruv
 ?>
