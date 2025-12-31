@@ -519,6 +519,4 @@ define("SMS_URL","http://msg.optimatrix.in/");
 
 /*=========================== */
 
-
-
 ?>
